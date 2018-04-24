@@ -1,0 +1,23 @@
+---
+title: "Movie Review"
+author: "Joseph Wang"
+date: "April 23, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("exercise.R")
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## `r headline`
+
+```
+`r short_summary`
+```
+
+```{r link, inlcude=FALSE}
+link_markdown <- paste0("[Link to the Review is here](", link_to_article, ")")
+```
+
+`r link_markdown`
